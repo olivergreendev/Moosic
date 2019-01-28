@@ -14,6 +14,12 @@
 		A783E26D2186258B006FF738 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A783E26B2186258B006FF738 /* LaunchScreen.storyboard */; };
 		A783E2782186258B006FF738 /* MoosicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A783E2772186258B006FF738 /* MoosicTests.swift */; };
 		A783E2832186258B006FF738 /* MoosicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A783E2822186258B006FF738 /* MoosicUITests.swift */; };
+		A783E29121865239006FF738 /* Pulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A783E29021865239006FF738 /* Pulsing.swift */; };
+		A783E29321866486006FF738 /* ThinPulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A783E29221866486006FF738 /* ThinPulsing.swift */; };
+		A78C2DB3218783A1005E9A0B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78C2DB2218783A1005E9A0B /* Security.framework */; };
+		A78C2DB5218783B1005E9A0B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A78C2DB4218783B1005E9A0B /* libc++.tbd */; };
+		A78C2DB7218783B9005E9A0B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78C2DB6218783B9005E9A0B /* AVFoundation.framework */; };
+		A78C2DB9218783BF005E9A0B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78C2DB8218783BF005E9A0B /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		A783E27E2186258B006FF738 /* MoosicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoosicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A783E2822186258B006FF738 /* MoosicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoosicUITests.swift; sourceTree = "<group>"; };
 		A783E2842186258B006FF738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A783E29021865239006FF738 /* Pulsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pulsing.swift; sourceTree = "<group>"; };
+		A783E29221866486006FF738 /* ThinPulsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThinPulsing.swift; sourceTree = "<group>"; };
+		A78C2DB2218783A1005E9A0B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A78C2DB4218783B1005E9A0B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		A78C2DB6218783B9005E9A0B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A78C2DB8218783BF005E9A0B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A78C2DB9218783BF005E9A0B /* AudioToolbox.framework in Frameworks */,
+				A78C2DB7218783B9005E9A0B /* AVFoundation.framework in Frameworks */,
+				A78C2DB5218783B1005E9A0B /* libc++.tbd in Frameworks */,
+				A78C2DB3218783A1005E9A0B /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +97,7 @@
 				A783E2762186258B006FF738 /* MoosicTests */,
 				A783E2812186258B006FF738 /* MoosicUITests */,
 				A783E2602186258B006FF738 /* Products */,
+				A78C2DB1218783A1005E9A0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,7 +116,9 @@
 			children = (
 				A783E2622186258B006FF738 /* AppDelegate.swift */,
 				A783E2642186258B006FF738 /* ViewController.swift */,
+				A783E29021865239006FF738 /* Pulsing.swift */,
 				A783E2662186258B006FF738 /* Main.storyboard */,
+				A783E29221866486006FF738 /* ThinPulsing.swift */,
 				A783E2692186258B006FF738 /* Assets.xcassets */,
 				A783E26B2186258B006FF738 /* LaunchScreen.storyboard */,
 				A783E26E2186258B006FF738 /* Info.plist */,
@@ -123,6 +142,17 @@
 				A783E2842186258B006FF738 /* Info.plist */,
 			);
 			path = MoosicUITests;
+			sourceTree = "<group>";
+		};
+		A78C2DB1218783A1005E9A0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A78C2DB8218783BF005E9A0B /* AudioToolbox.framework */,
+				A78C2DB6218783B9005E9A0B /* AVFoundation.framework */,
+				A78C2DB4218783B1005E9A0B /* libc++.tbd */,
+				A78C2DB2218783A1005E9A0B /* Security.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +293,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A783E2652186258B006FF738 /* ViewController.swift in Sources */,
+				A783E29321866486006FF738 /* ThinPulsing.swift in Sources */,
+				A783E29121865239006FF738 /* Pulsing.swift in Sources */,
 				A783E2632186258B006FF738 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,8 +452,13 @@
 				DEVELOPMENT_TEAM = 7Q4532Y2KQ;
 				INFOPLIST_FILE = Moosic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Moosic",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.oliverportfolio.Moosic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Moosic-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -433,8 +470,13 @@
 				DEVELOPMENT_TEAM = 7Q4532Y2KQ;
 				INFOPLIST_FILE = Moosic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Moosic",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.oliverportfolio.Moosic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Moosic-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -516,6 +558,7 @@
 				A783E2892186258B006FF738 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A783E28A2186258B006FF738 /* Build configuration list for PBXNativeTarget "MoosicTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +567,7 @@
 				A783E28C2186258B006FF738 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A783E28D2186258B006FF738 /* Build configuration list for PBXNativeTarget "MoosicUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +576,7 @@
 				A783E28F2186258B006FF738 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
